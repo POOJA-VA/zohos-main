@@ -11,7 +11,7 @@ class Language extends ConsumerStatefulWidget {
 }
 
 class _LanguageState extends ConsumerState<Language> {
-   late Locale _selectedLanguage;
+  late Locale _selectedLanguage;
   late List<Locale> _availableLanguages;
 
   @override
@@ -29,7 +29,7 @@ class _LanguageState extends ConsumerState<Language> {
 
   String _getLanguageName(BuildContext context, Locale locale) {
     final localizations = AppLocalizations.of(context)!;
-    
+
     switch (locale.languageCode) {
       case 'en':
         return localizations.english;
@@ -79,14 +79,29 @@ class _LanguageState extends ConsumerState<Language> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              AppLocalizations.of(context)!.admin,
+              AppLocalizations.of(context)!.step,
               style: TextStyle(
                 fontSize: 16,
               ),
             ),
             SizedBox(height: 10),
             Text(
-              AppLocalizations.of(context)!.admins,
+              AppLocalizations.of(context)!.steps,
+              style: TextStyle(fontSize: 16),
+            ),
+            SizedBox(height: 10),
+            Text(
+              AppLocalizations.of(context)!.stepss,
+              style: TextStyle(fontSize: 16),
+            ),
+            SizedBox(height: 10),
+            Text(
+              AppLocalizations.of(context)!.stepsss,
+              style: TextStyle(fontSize: 16),
+            ),
+            SizedBox(height: 10),
+            Text(
+              AppLocalizations.of(context)!.stepssss,
               style: TextStyle(fontSize: 16),
             ),
           ],
